@@ -1,0 +1,58 @@
+# 大文件和生成的文件
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+*.mov
+
+# 结果输出目录
+results/
+demo_output/
+
+# 临时处理文件
+frames_package/
+mask_package/
+inpaint_package/
+restore_package/
+denoise_package/
+
+# 原始视频
+raw_video/
+demo_video/
+raw_prompt/
+
+# 实验数据
+experiment/exp0/All_images/
+experiment/exp0/Video_output/
+experiment/exp0/results/
+experiment/exp1/
+experiment/exp2/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Conda 和虚拟环境
+venv/
+env/
+
+# 其他
+*.log
+*.xlsx
+*.docx

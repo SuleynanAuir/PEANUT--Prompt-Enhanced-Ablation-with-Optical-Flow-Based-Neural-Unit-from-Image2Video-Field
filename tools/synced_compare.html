@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>并排同步播放对比</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 20px; }
+    .row { display: flex; gap: 20px; }
+    .panel { flex: 1; background: #f8f8f8; border-radius: 12px; padding: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.08); }
+    h3 { margin: 8px 0 12px; }
+    video { width: 100%; border-radius: 8px; display: block; }
+    .red { border: 4px solid #ff4136; }
+    .blue { border: 4px solid #0074d9; }
+    .controls { margin: 16px 0; display: flex; gap: 10px; align-items: center; }
+    button { padding: 6px 12px; }
+    input[type=range] { width: 240px; }
+    .path { font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <h2>并排同步播放对比</h2>
+  <div class="controls">
+    <button id="play">播放</button>
+    <button id="pause">暂停</button>
+    <label>速度: <input id="rate" type="range" min="0.25" max="2" step="0.25" value="1"></label>
+    <span id="time">00:00 / 00:00</span>
+  </div>
+
+  <div class="row">
+    <div class="panel">
+      <h3>原始 / 输入</h3>
+      <video id="vidL" class="red" src="../results/alita1_result/alita1_denoise.mp4" controls preload="metadata"></video>
+      <div class="path">路径: ../results/alita1_result/alita1_denoise.mp4</div>
+    </div>
+    <div class="panel">
+      <h3>修复 / 输出</h3>
+      <video id="vidR" class="blue" src="../demo_output/alita1_result/alita1_final.mp4" controls preload="metadata"></video>
+      <div class="path">路径: ../demo_output/alita1_result/alita1_final.mp4</div>
+    </div>
+  </div>
+
+  <script>
+    const L = document.getElementById('vidL');
+    const R = document.getElementById('vidR');
+    const playBtn = document.getElementById('play');
+    const pauseBtn = document.getElementById('pause');
+    const rate = document.getElementById('rate');
+    const time = document.getElementById('time');
+
+    function format(t){
+      const m = Math.floor(t/60); const s = Math.floor(t%60);
+      return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    }
+
+    function sync(from, to){
+      // 按比例同步时间（适配不同时长视频）
+      const ratio = to.duration / from.duration;
+      const targetTime = from.currentTime * ratio;
+      const dt = Math.abs(targetTime - to.currentTime);
+      if (dt > 0.04) to.currentTime = targetTime; // 40ms 容忍
+      to.playbackRate = from.playbackRate;
+      if (from.paused && !to.paused) to.pause();
+      if (!from.paused && to.paused) to.play();
+    }
+
+    // 双向时间更新同步
+    L.addEventListener('timeupdate', () => { sync(L, R); time.textContent = `${format(L.currentTime)} / ${format(L.duration||0)}`; });
+    R.addEventListener('timeupdate', () => { sync(R, L); });
+
+    // 播放/暂停控制
+    playBtn.onclick = async () => { try { await L.play(); await R.play(); } catch(e){} };
+    pauseBtn.onclick = () => { L.pause(); R.pause(); };
+
+    // 速率控制同步
+    rate.oninput = () => { L.playbackRate = parseFloat(rate.value); R.playbackRate = parseFloat(rate.value); };
+
+    // 元数据加载后时间显示
+    L.addEventListener('loadedmetadata', () => { time.textContent = `${format(0)} / ${format(L.duration||0)}`; });
+  </script>
+</body>
+</html>

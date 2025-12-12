@@ -1,0 +1,62 @@
+{
+  "description": "视频修复流程配置文件",
+  "version": "1.0.0",
+  
+  "paths": {
+    "conda_executable": "C:\\Users\\Aiur\\miniconda3\\Scripts\\conda.exe",
+    "samwise_project": "C:\\Users\\Aiur\\SuperVideo-inpaint\\SAMWISE",
+    "e2fgvi_project": "C:\\Users\\Aiur\\SuperVideo-inpaint\\E2FGVI_Project",
+    "basicvsr_project": "C:\\Users\\Aiur\\SuperVideo-inpaint\\BasicVSR_PlusPlus",
+    "output_base_dir": "pipeline_output"
+  },
+  
+  "conda_environments": {
+    "samwise": "samwise",
+    "e2fgvi": "e2fgvi-project",
+    "basicvsr": "basicvsrpp-demo"
+  },
+  
+  "models": {
+    "e2fgvi": {
+      "model_name": "e2fgvi_hq",
+      "checkpoint": "release_model\\E2FGVI-HQ-CVPR22.pth",
+      "neighbor_stride": 3,
+      "max_load_frames": 8
+    },
+    "basicvsr": {
+      "config": "configs\\basicvsr_plusplus_reds4.py",
+      "checkpoint": "checkpoints\\basicvsr_plusplus_reds4.pth"
+    }
+  },
+  
+  "processing_options": {
+    "denoise": {
+      "method": "nlm",
+      "strength": 5,
+      "preserve_details": true,
+      "create_video": true,
+      "video_speed": 0.4
+    },
+    "cuda": {
+      "alloc_conf": "expandable_segments:True"
+    }
+  },
+  
+  "presets": {
+    "fast": {
+      "neighbor_stride": 5,
+      "max_load_frames": 4,
+      "denoise_strength": 3
+    },
+    "balanced": {
+      "neighbor_stride": 3,
+      "max_load_frames": 8,
+      "denoise_strength": 5
+    },
+    "quality": {
+      "neighbor_stride": 2,
+      "max_load_frames": 12,
+      "denoise_strength": 7
+    }
+  }
+}
