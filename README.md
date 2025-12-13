@@ -207,7 +207,7 @@
     </div>
 </div>
 
-##  📂 Folder Structure
+##  📂 1. Folder Structure
 
 ```
 SuperVideo-inpaint/
@@ -236,9 +236,9 @@ SuperVideo-inpaint/
 └── video_inpaint_demo.ps1         # ⭐ demo single process
 ```
 
-## 🚀 Quick Start (Demo🎦 ➕ Patch📚)
+## 🚀 2. Quick Start (Demo🎦 ➕ Patch📚)
 
-### Method 1: Demo Script 🎦
+### 2.1 Method 1: Demo Script 🎦
 
 Single Video for the whoe processing pipeline.
 
@@ -259,7 +259,7 @@ Copy-Item "your_video.mp4" -Destination "demo_video\"
 
 - ✓ Supports custom resolution, FPS, and other parameters
 
-### Method 2: Batch Processing Pipeline 📚
+### 2.2 Method 2: Batch Processing Pipeline 📚
 
 batch processing in `raw_video` package video
 
@@ -289,14 +289,14 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 
 - ✓ Suitable for batch processing of multiple videos
 
-## 📝 Use Demo
+## 📝 3. Use Demo
 
-### Demo 1: Demo Basic Usage  
+### 3.1 Demo 1: Demo Basic Usage  
 ```powershell
 .\video_inpaint_demo.ps1 -VideoPath "alita1.mp4" -TextPrompt "the flying chains and its lips"
 ```
 
-### Demo 2: Custom Resolution and FPS
+### 3.2 Demo 2: Custom Resolution and FPS
 - max resolution (default 1080)
 - fps (default 30)
 
@@ -308,7 +308,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
     -FrameExtractionFps 30
 ```
 
-### Demo 3: Fast Mode (CPU mode, Skip enhancements ❎)
+### 3.3 Demo 3: Fast Mode (CPU mode, Skip enhancements ❎)
 ```powershell
 .\video_inpaint_demo.ps1 `
     -VideoPath "test.mp4" `
@@ -317,7 +317,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
     -ForceCPU
 ```
 
-### Demo 4: High Quality Mode (Slower GPU mode, All pipeline ✅)
+### 3.4 Demo 4: High Quality Mode (Slower GPU mode, All pipeline ✅)
 
 - maximum settings with All Settings Pipeline
  
@@ -331,9 +331,9 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 ```
 
 
-## ⚙️ Parameter Description
+## ⚙️ 4. Parameter Description
 
-### Demo Script (video_inpaint_demo_en.ps1)
+### 4.1 Demo Script (video_inpaint_demo_en.ps1)
 
 | Parameters | Necessity | Default | Statement |
 | :--- | :---: | :---: | :--- |
@@ -350,7 +350,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 | `-SkipDenoise` | <span style="color: red; font-weight: bold;">&#x2717;</span> | <span style="color: red; font-weight: bold;">&#x2717;</span> | Skip Denoise |
 | `-ForceCPU` | <span style="color: red; font-weight: bold;">&#x2717;</span> | <span style="color: red; font-weight: bold;">&#x2717;</span> | Force CPU（BasicVSR++）|
 
-### Batch Processing (video_inpaint_pipeline_en.ps1)
+### 4.2 Batch Processing (video_inpaint_pipeline_en.ps1)
 
 | Parameters | Necessity | Default | Statement |
 | :--- | :---: | :---: | :--- |
@@ -430,7 +430,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 
 </div> -->
 
-### 🚀 PEANUT Video Processing Architecture
+## 🚀 5. PEANUT Video Processing Architecture
 
 <div style="
     display: flex; 
@@ -621,24 +621,24 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 
 </div>
 
-## 💡Performance Recommendations
+## 💡 6. Performance Recommendations
 
-### Quick Mode (Low Quality & Fast🏃‍♂️‍➡️)
+### 6.1 Quick Mode (Low Quality & Fast🏃‍♂️‍➡️)
 ```powershell
 -NeighborStride 5 -MaxLoadFrames 4 -DenoiseStrength 3
 ```
 
-### Balanced Mode (Recommended🥳)
+### 6.2 Balanced Mode (Recommended🥳)
 ```powershell
 -NeighborStride 3 -MaxLoadFrames 8 -DenoiseStrength 5
 ```
 
-### Quality Mode (High Quality & Slow Speed🙇‍♀️)
+### 6.3 Quality Mode (High Quality & Slow Speed🙇‍♀️)
 ```powershell
 -NeighborStride 2 -MaxLoadFrames 12 -DenoiseStrength 7
 ```
 
-## ⚠️ Important Operating Notes
+## ⚠️ 7. Important Operating Notes
 
 > Please follow these guidelines before running the processing script to ensure optimal performance and results.
 
@@ -679,7 +679,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 
 ***
 
-## 🛠️ Environment Requirements
+## 🛠️ 8. Environment Requirements
 
 <div style="
     padding: 20px; 
@@ -689,7 +689,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 ">
     
-### 🖥️ **Operating System**
+### 🖥️ 8.1 **Operating System**
 <div style="
     background-color: #e6f7ff; 
     padding: 8px 15px; 
@@ -703,7 +703,7 @@ CUDA Available: True
 CUDA Version: 12.4 
 </div>
 
-### 🧪 **Conda Environments (Dependencies)**
+### 🧪 8.2 **Conda Environments (Dependencies)**
 
 <p style="font-size: 0.9em; color: #555;">
     The processing pipeline requires three dedicated Conda environments for different components:
@@ -734,7 +734,7 @@ CUDA Version: 12.4
 
 
 
-## 🎬 Video Content Inpainting Workflow Examples
+## 🎬 9. Video Content Inpainting Workflow Examples
 
 The following provides two structured workflows using PowerShell for a hypothetical video inpainting project (assumed to be `SuperVideo-inpaint`).
 
@@ -778,7 +778,7 @@ This workflow is designed for running multiple jobs, facilitating large-scale **
 >     -OutputDir "custom_output\LogoRemoval_ExperimentA"
 > ```
 
-## 📊 Quality Assessment & Metric Evaluation Workflow
+## 📊 10. Quality Assessment & Metric Evaluation Workflow
 
 This section outlines the workflow for running **EXP0**, a controlled experiment designed to rigorously evaluate the inpainting quality of the **LAMA4Video** model against established metrics.
 
@@ -918,7 +918,7 @@ The experiment focuses on both traditional signal processing metrics and special
     </div>
 </div>
 
-## 📞 Troubleshooting Guide
+## 📞 11. Troubleshooting Guide
 
 <div style="
     display: flex;
@@ -976,7 +976,7 @@ Remove-Item "mask_package\video*" -Recurse -Force
 </div>
 
 
-## 🔄 Version History
+## 🔄 12. Version History
 
 <div style="
     display: flex;
