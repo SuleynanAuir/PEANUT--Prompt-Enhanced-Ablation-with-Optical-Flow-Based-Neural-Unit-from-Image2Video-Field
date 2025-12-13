@@ -1,0 +1,3 @@
+conda activate opticalflow_estimation_visualization; python run.py --frames-package batman6_frames --out ./batman6_frames_output_frames --output-dir optical_flow_output
+
+conda activate opticalflow_estimation_visualization; python visualize_optical_flow.py optical_flow_output/batman6_frames_output_frames optical_flow_output
