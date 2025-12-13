@@ -38,7 +38,67 @@
   </div>
 </div>
 
-![](assets/readme/preview_mask.png "P-MASk Prompt Guided Mask Generation")
+<!-- ![](assert\readme\preview_mask.png "P-MASk Prompt Guided Mask Generation") -->
+
+<div style="border-left: 4px solid #4CAF50; padding-left: 15px; background-color: #f7fcf7; padding: 10px; border-radius: 5px;">
+    <p style="margin: 0; font-size: 1.05em; color: #333;">
+        📞 Contact us here and welcome your coming !
+    </p>
+</div>
+
+<ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">👤</span> 
+        <strong>Name:</strong> Minghao Li (Aiur)
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">🏫</span> 
+        <strong>Affiliation:</strong> Beijing Normal University - Hong Kong Baptist University (BNBU)
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">📧</span> 
+        <strong>Email:</strong> <code>t330034027@mail.uic.edu.cn</code>
+    </li>
+</ul>
+
+---
+
+
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 P-MASk Module in Different Characteristic Scenes 
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/preview_mask.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
 
 ## 🎬💫 Let's Enjoy the Show
 
@@ -72,37 +132,37 @@
 </div>
 
 <div style="text-align:center; margin:0;">
-    <a href="./results/alita1_result/alita1_triple_comparison.mp4" target="_blank" rel="noopener">
-        <img src="./assets/readme/alita1_triple_comparison.gif" alt="三合一并排对比预览" style="width:95%; max-width:1400px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12);" />
+    <a href="./assets/readme/alita1_triple_comparison.gif" target="_blank" rel="noopener">
+        <img src="./assets/readme/alita1_triple_comparison.gif" alt="三合一并排对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
   </a>
-  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Rapid and Continuous Movement 📗 Spanning Large Area 📕 Slow Motion 🤗 Prompt:  flying chains apart from its tips<a href="./results/alita1_result/alita1_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out Alita:Fight Angle 🥳</a></p>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Rapid and Continuous Movement 📗 Spanning Large Area 📕 Slow Motion 🤗 Prompt:  flying chains apart from its tips<a href="./assets/readme/alita1_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out Alita:Fight Angle 🥳</a></p>
 </div>
 
 <!-- 更多示例（竖直排列） -->
 <div style="text-align:center; margin:0;">
     <a href="./results/Zoopic_result/Zoopic_triple_comparison.mp4" target="_blank" rel="noopener">
-        <img src="./assets/readme/Zoopic_triple_comparison.gif" alt="Zoopic 三合一对比预览" style="width:95%; max-width:1400px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12);" />
+        <img src="./assets/readme/Zoopic_triple_comparison.gif" alt="Zoopic 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
   </a>
   <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗Screen Jump 📕 Background and Object Classify🤗 the carrot 🟰 🤗 the thing held by rabbit 🟰 🤗 the thing clicked at 1st shot<a href="./results/Zoopic_result/Zoopic_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out your Officer Judy !</a></p>
 </div>
 
 <div style="text-align:center; margin:0;">
     <a href="./results/dream3_result/dream3_triple_comparison.mp4" target="_blank" rel="noopener">
-        <img src="./assets/readme/dream3_triple_comparison.gif" alt="dream3 三合一对比预览" style="width:95%; max-width:1400px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12);" />
+        <img src="./assets/readme/dream3_triple_comparison.gif" alt="dream3 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
   </a>
   <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗 Slow Motion 📕 Background and Object Classify 🤗 Prompt: the person setting on chair fell off <a href="./results/dream3_result/dream3_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out to Time Reversal !</a></p>
 </div>
 
 <div style="text-align:center; margin:0;">
     <a href="./results/batman6_result/batman6_triple_comparison.mp4" target="_blank" rel="noopener">
-        <img src="./assets/readme/batman6_triple_comparison.gif" alt="batman6 三合一对比预览" style="width:95%; max-width:1400px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12);" />
+        <img src="./assets/readme/batman6_triple_comparison.gif" alt="batman6 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
   </a>
   <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗Long-duration Movement 📕 Complex Background 🤗 the person running out with yellow clothes 🟰 🤗 the person who runs faster<a href="./results/batman6_result/batman6_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out to find whether he also fell off ?</a></p>
 </div>
 
 <div style="text-align:center; margin:0;">
     <a href="./results/space_travel1_result/space_travel1_triple_comparison.mp4" target="_blank" rel="noopener">
-        <img src="./assets/readme/space_travel1_triple_comparison.gif" alt="space_travel1 三合一对比预览" style="width:95%; max-width:1400px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12);" />
+        <img src="./assets/readme/space_travel1_triple_comparison.gif" alt="space_travel1 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
   </a>
   <p style="margin:4px 0; color:#888; font-size:0.85em;">🤗 Prompt: the girl who runs out of the house <a href="./results/space_travel1_result/space_travel1_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out Murphy, click !</a></p>
 </div>
@@ -110,7 +170,42 @@
 
 > *🤗 Frame Processing and Detail Capture of Action Shots
 
-![](assets/readme/preview1.png "P-MASk Prompt Guided Mask Generation")
+<!-- ![](assets/readme/preview1.png "P-MASk Prompt Guided Mask Generation") -->
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Pipeline Visualization
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/preview1.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
 
 ##  📂 Folder Structure
 
@@ -131,7 +226,6 @@ SuperVideo-inpaint/
 │   └── exp0/               # the fail of Big-LaMa implemented in video inpaint
 │   └── exp1/               # P-MASk Hyperparameters: model-size / clip-window / step
 │   └── exp2/               # NOF-Eraser Hyperparameters: neighbors / step
-
 
 │
 ├── SAMWISE/                # project 1 P-MASk: prompt guied mask generation for each sampled frames 
@@ -388,6 +482,43 @@ Copy-Item "video.mp4" -Destination "raw_video\"
     </ul>
 </div>
 
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 P-MASk Module Pipeline Processing
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/P_MASk_CMT_HSA.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+
+
 <div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
 <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
 
@@ -409,6 +540,43 @@ Copy-Item "video.mp4" -Destination "raw_video\"
         <li>➡️ Output: `inpaint_package/` <span style="font-size: 0.9em; color: #12d12cff; font-weight: bold;">(Inpainted Frames)</span></li>
     </ul>
 </div>
+
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 NOF-Eraser Module Pipeline Processing
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/NOF_FULL.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+
 
 <div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
 <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
@@ -479,31 +647,31 @@ Copy-Item "video.mp4" -Destination "raw_video\"
     <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #007bff; background-color: #f7f9fc; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         👉 1. Video Path Restriction
         <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
-            You only need to provide the **filename** (e.g., `alita1.mp4`). The video file **must** be placed inside the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">raw_video/</code> folder.
+            You only need to provide the filename (e.g., `alita1.mp4`). The video file must be placed inside the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">raw_video/</code> folder.
         </p>
     </li>
     <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #28a745; background-color: #f7fcf7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         🗣️ 2. Text Prompt Language
         <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
-            The object to be removed must be described using **English text prompts** (e.g., "the person", "the car", "the traffic sign").
+            The object to be removed must be described using English text prompts (e.g., "the person", "the car", "the traffic sign").
         </p>
     </li>
     <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #ffc107; background-color: #fffdf7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         💾 3. Memory Usage (VRAM)
         <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
-            If you encounter **Out-of-Memory (OOM) errors**, please try reducing the value of the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">MaxLoadFrames</code> parameter.
+            If you encounter Out-of-Memory (OOM) errors, please try reducing the value of the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">MaxLoadFrames</code> parameter.
         </p>
     </li>
     <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #dc3545; background-color: #fcf7f7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         ⏱️ 4. Processing Time Estimate
         <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
-            Processing time depends on video length and parameter settings. A 10-second video typically requires **5 to 20 minutes** for full pipeline execution.
+            Processing time depends on video length and parameter settings. A 10-second video typically requires 5 to 20 minutes for full pipeline execution.
         </p>
     </li>
     <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #6c757d; background-color: #fcfcfc; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         🧹 5. Clean Run Policy
         <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
-            Each new script run will **clear all previous intermediate results** (e.g., frames, masks) to maintain a clean directory structure.
+            Each new script run will clear all previous intermediate results (e.g., frames, masks) to maintain a clean directory structure.
         </p>
     </li>
 </ul>
@@ -636,7 +804,119 @@ The experiment focuses on both traditional signal processing metrics and special
 | **Artifact Score** | - | Specialized metric to detect common inpainting defects like checkerboard patterns or color bleeding. Lower is better. |
 | **Temporal Consistency** | - | **Critical for Video Inpainting.** Evaluates frame-to-frame smoothness and stability of the repaired region, often via optical flow or difference mapping. |
 
-Would you like me to discuss the underlying mathematical formulations for any of these metrics, such as the equation for SSIM or how Optical Flow is integrated into Temporal Consistency?
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 60px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment0: The Fail of Big-LaMa Applied in Vipaint
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/compare.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment2: P-MASk Hyperparameters Comparision
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/total_summary.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment2: NOF-Eraser Hyperparameters Comparision
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/timecost.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
 
 ## 📞 Troubleshooting Guide
 
@@ -654,8 +934,8 @@ Would you like me to discuss the underlying mathematical formulations for any of
     <h4 style="margin-top: 0; color: #ff4d4f;">❌ Issue 1: Video File Not Found</h4>
     <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution:</p>
     <ul style="margin: 0; padding-left: 20px; font-size: 0.95em;">
-        <li>**Demo Script:** Ensure the video is placed in the <code>demo_video/</code> folder.</li>
-        <li>**Batch Script:** Use the full path or correct relative path (e.g., <code>raw_video\video.mp4</code>).</li>
+        <li>Demo Script: Ensure the video is placed in the <code>demo_video/</code> folder.</li>
+        <li>Batch Script: Use the full path or correct relative path (e.g., <code>raw_video\video.mp4</code>).</li>
     </ul>
 </div>
 
