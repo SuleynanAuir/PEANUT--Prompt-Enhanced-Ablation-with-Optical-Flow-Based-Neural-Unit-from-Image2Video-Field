@@ -293,7 +293,7 @@ Copy-Item "video.mp4" -Destination "raw_video\"
 
 ### 3.1 Demo 1: Demo Basic Usage  
 ```powershell
-.\video_inpaint_demo.ps1 -VideoPath "alita1.mp4" -TextPrompt "the flying chains and its lips"
+.\video_inpaint_demo_en.ps1 -VideoPath "alita1.mp4" -TextPrompt "the flying chains and its lips"
 ```
 
 ### 3.2 Demo 2: Custom Resolution and FPS

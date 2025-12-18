@@ -1,0 +1,1082 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Aiur\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p></p><h1 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;"><br>
+PEANUT: Prompt-Enhanced Ablation with Optical Flow-Based Neural Unit for Spatio-Temporal Consistency &amp; VSR++ Clarity from IMG2Video Field 💫<p></p>
+</h1>
+<div style="text-align: center; margin: 30px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); font-weight: 500;">
+    <span style="margin-right: 8px; font-size: 1.1em;">🐍</span>
+    <span>Python</span>
+    <span style="margin-left: 8px; background-color: rgba(255,255,255,0.25); padding: 2px 8px; border-radius: 12px; font-weight: 600;">v3.8</span>
+  </div>
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 8px 16px; border-radius: 20px; box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4); font-weight: 500;">
+    <span style="margin-right: 8px; font-size: 1.1em;">🔥</span>
+    <span>PyTorch</span>
+    <span style="margin-left: 8px; background-color: rgba(255,255,255,0.25); padding: 2px 8px; border-radius: 12px; font-weight: 600;">v2.6.0+cu124</span>
+  </div>
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 8px 16px; border-radius: 20px; box-shadow: 0 4px 12px rgba(79, 172, 254, 0.4); font-weight: 500;">
+    <span style="margin-right: 8px; font-size: 1.1em;">⚡</span>
+    <span>CUDA</span>
+    <span style="margin-left: 8px; background-color: rgba(255,255,255,0.25); padding: 2px 8px; border-radius: 12px; font-weight: 600;">v12.4</span>
+  </div>
+</div>
+<div style="text-align: center; margin: 15px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 6px 14px; border-radius: 18px; box-shadow: 0 3px 10px rgba(250, 112, 154, 0.35); font-weight: 500; font-size: 0.9em;">
+    <span style="margin-right: 6px;">🎵</span>
+    <span>TorchAudio</span>
+    <span style="margin-left: 6px; background-color: rgba(255,255,255,0.25); padding: 1px 6px; border-radius: 10px; font-weight: 600;">v2.6.0+cu124</span>
+  </div>
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; padding: 6px 14px; border-radius: 18px; box-shadow: 0 3px 10px rgba(168, 237, 234, 0.35); font-weight: 500; font-size: 0.9em;">
+    <span style="margin-right: 6px;">🖼️</span>
+    <span>TorchVision</span>
+    <span style="margin-left: 6px; background-color: rgba(255,255,255,0.4); padding: 1px 6px; border-radius: 10px; font-weight: 600;">v0.21.0+cu124</span>
+  </div>
+  <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333; padding: 6px 14px; border-radius: 18px; box-shadow: 0 3px 10px rgba(252, 182, 159, 0.35); font-weight: 500; font-size: 0.9em;">
+    <span style="margin-right: 6px;">🎬</span>
+    <span>imageio-ffmpeg</span>
+    <span style="margin-left: 6px; background-color: rgba(255,255,255,0.4); padding: 1px 6px; border-radius: 10px; font-weight: 600;">v0.6.0</span>
+  </div>
+</div>
+<div style="border-left: 4px solid #4CAF50; padding-left: 15px; background-color: #f7fcf7; padding: 10px; border-radius: 5px;">
+    <p style="margin: 0; font-size: 1.05em; color: #333;">
+        📞 Contact us here and welcome your coming !
+    </p>
+</div>
+<ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">👤</span> 
+        <strong>Name:</strong> Minghao Li (Aiur)
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">🏫</span> 
+        <strong>Affiliation:</strong> Beijing Normal University - Hong Kong Baptist University (BNBU)
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+        <span style="color: #4CAF50; font-size: 1.2em;">📧</span> 
+        <strong>Email:</strong> <code>t330034027@mail.uic.edu.cn</code>
+    </li>
+</ul>
+<hr>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 P-MASk Module in Different Characteristic Scenes 
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/preview_mask.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<h2 id="-lets-enjoy-the-show">🎬💫 Let's Enjoy the Show </h2>
+<div style="
+    text-align: center;
+    padding: 20px 25px;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); /* 柔和渐变背景 */
+    border: 3px solid #4caf50; /* 突出主题色边框 */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3); /* 绿色阴影，突出核心流程 */
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #1b5e20; /* 深绿色文本 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+    <span style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.8em;">🤗</span> Initial Video
+    </span>
+    <span style="margin: 0 25px; color: #4caf50; font-size: 2.0em; font-weight: 300;">→</span>
+    <span style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.8em;">😶‍🌫️</span> Prompt-Guided Mask
+    </span>
+    <span style="margin: 0 25px; color: #4caf50; font-size: 2.0em; font-weight: 300;">→</span>
+    <span style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.8em;">🥳</span> Inpaint Video
+    </span>
+</div>
+<div style="text-align:center; margin:0;">
+    <a href="./assets/readme/alita1_triple_comparison.gif" target="_blank" rel="noopener">
+        <img src="./assets/readme/alita1_triple_comparison.gif" alt="三合一并排对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+  </a>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Rapid and Continuous Movement 📗 Spanning Large Area 📕 Slow Motion 🤗 Prompt:  flying chains apart from its tips<a href="./assets/readme/alita1_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out Alita:Fight Angle 🥳</a></p>
+</div>
+<div style="text-align:center; margin:0;">
+    <a href="./results/Zoopic_result/Zoopic_triple_comparison.mp4" target="_blank" rel="noopener">
+        <img src="./assets/readme/Zoopic_triple_comparison.gif" alt="Zoopic 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+  </a>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗Screen Jump 📕 Background and Object Classify🤗 the carrot 🟰 🤗 the thing held by rabbit 🟰 🤗 the thing clicked at 1st shot<a href="./results/Zoopic_result/Zoopic_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out your Officer Judy !</a></p>
+</div>
+<div style="text-align:center; margin:0;">
+    <a href="./results/dream3_result/dream3_triple_comparison.mp4" target="_blank" rel="noopener">
+        <img src="./assets/readme/dream3_triple_comparison.gif" alt="dream3 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+  </a>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗 Slow Motion 📕 Background and Object Classify 🤗 Prompt: the person setting on chair fell off <a href="./results/dream3_result/dream3_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out to Time Reversal !</a></p>
+</div>
+<div style="text-align:center; margin:0;">
+    <a href="./results/batman6_result/batman6_triple_comparison.mp4" target="_blank" rel="noopener">
+        <img src="./assets/readme/batman6_triple_comparison.gif" alt="batman6 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+  </a>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">📒 Semantic Understand 📗Long-duration Movement 📕 Complex Background 🤗 the person running out with yellow clothes 🟰 🤗 the person who runs faster<a href="./results/batman6_result/batman6_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out to find whether he also fell off ?</a></p>
+</div>
+<div style="text-align:center; margin:0;">
+    <a href="./results/space_travel1_result/space_travel1_triple_comparison.mp4" target="_blank" rel="noopener">
+        <img src="./assets/readme/space_travel1_triple_comparison.gif" alt="space_travel1 三合一对比预览" style="width:100%; max-width:1600px; border:2px solid #ddd; border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,0.12); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+  </a>
+  <p style="margin:4px 0; color:#888; font-size:0.85em;">🤗 Prompt: the girl who runs out of the house <a href="./results/space_travel1_result/space_travel1_triple_comparison.mp4" target="_blank" style="margin-left:8px; color:#0074d9; text-decoration:none;">🔍 Check out Murphy, click !</a></p>
+</div>
+<blockquote>
+<p>*🤗 Frame Processing and Detail Capture of Action Shots</p>
+</blockquote>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Pipeline Visualization
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/preview1.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<h2 id="-1-folder-structure">📂 1. Folder Structure </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>SuperVideo-inpaint/
+├── raw_video/              # patch processing raw video input
+├── results/                # patch processing inpaint result (IMG/GIF)
+├── demo_video/             # single processing demo video input
+├── demo_output/            # single processing demo video output
+│
+├── frames_package/         # temp: video2frames (fps/extract-rate settings)
+├── mask_package/           # temp: mask generation based on frame_package with P-MASk processed
+├── inpaint_package/        # temp: NOF-Eraser output storage
+├── restore_package/        # temp: UR-Net output storage
+├── denoise_package/        # temp: nlm denoise processed 
+│
+├── experiment/             # exp &amp; eval metrics
+│   └── exp0/               # the fail of Big-LaMa implemented in video inpaint
+│   └── exp1/               # P-MASk Hyperparameters: model-size / clip-window / step
+│   └── exp2/               # NOF-Eraser Hyperparameters: neighbors / step
+
+│
+├── SAMWISE/                # project 1 P-MASk: prompt guied mask generation for each sampled frames 
+├── E2FGVI_Project/         # project 2 NOF-Eraser: flow-based video inpaint
+├── BasicVSR_PlusPlus/      # project 3 UR-Net &amp; Denoise Block for video clearity
+│
+├── video_inpaint_pipeline_en.ps1  # ⭐💫 main function to patch process
+└── video_inpaint_demo.ps1         # ⭐ demo single process
+</code></pre><h2 id="-2-quick-start-demo--patch">🚀 2. Quick Start (Demo🎦 ➕ Patch📚) </h2>
+<h3 id="21-method-1-demo-script-">2.1 Method 1: Demo Script 🎦 </h3>
+<p>Single Video for the whoe processing pipeline.</p>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token comment"># video to ur demo_video package</span>
+<span class="token function">Copy-Item</span> <span class="token string">"your_video.mp4"</span> <span class="token operator">-</span>Destination <span class="token string">"demo_video\"</span>
+<span class="token comment"># run</span>
+<span class="token punctuation">.</span>\video_inpaint_demo<span class="token punctuation">.</span>ps1 <span class="token operator">-</span>VideoPath <span class="token string">"your_video.mp4"</span> <span class="token operator">-</span>TextPrompt <span class="token string">"the object to remove"</span>
+<span class="token comment"># model saved in: demo_output\your_video_result\</span>
+</code></pre><p><strong>Advantage</strong>:</p>
+<ul>
+<li>
+<p>✓ Automatically creates a separate output folder</p>
+</li>
+<li>
+<p>✓ Retains all intermediate results (frames, masks, repairs, enhancements)</p>
+</li>
+<li>
+<p>✓ Suitable for single video testing and debugging</p>
+</li>
+<li>
+<p>✓ Supports custom resolution, FPS, and other parameters</p>
+</li>
+</ul>
+<h3 id="22-method-2-batch-processing-pipeline-">2.2 Method 2: Batch Processing Pipeline 📚 </h3>
+<p>batch processing in <code>raw_video</code> package video</p>
+<ul>
+<li>basic pipeline version (all)</li>
+</ul>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token comment"># put video into ur raw_video package</span>
+<span class="token function">Copy-Item</span> <span class="token string">"video.mp4"</span> <span class="token operator">-</span>Destination <span class="token string">"raw_video\"</span>
+<span class="token comment"># bathc processing pipeline</span>
+<span class="token punctuation">.</span>\video_inpaint_pipeline_en<span class="token punctuation">.</span>ps1 <span class="token operator">-</span>VideoPath <span class="token string">"raw_video\video.mp4"</span> <span class="token operator">-</span>TextPrompt <span class="token string">"the object"</span>
+<span class="token comment"># results saved in results package</span>
+</code></pre><ul>
+<li>advanced pipeline version</li>
+</ul>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token comment"># skip certain steps</span>
+<span class="token punctuation">.</span>\video_inpaint_pipeline_en<span class="token punctuation">.</span>ps1 `
+    <span class="token operator">-</span>VideoPath <span class="token string">"raw_video\video.mp4"</span> `
+    <span class="token operator">-</span>TextPrompt <span class="token string">"object"</span> `
+    <span class="token operator">-</span>SkipMask `
+    <span class="token operator">-</span>SkipInpaint
+</code></pre><p><strong>Advantage</strong>:</p>
+<ul>
+<li>
+<p>✓ Supports specifying the output directory (-OutputDir)</p>
+</li>
+<li>
+<p>✓ Automatically cleans up intermediate files</p>
+</li>
+<li>
+<p>✓ Suitable for batch processing of multiple videos</p>
+</li>
+</ul>
+<h2 id="-3-use-demo">📝 3. Use Demo </h2>
+<h3 id="31-demo-1-demo-basic-usage">3.1 Demo 1: Demo Basic Usage </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span>\video_inpaint_demo<span class="token punctuation">.</span>ps1 <span class="token operator">-</span>VideoPath <span class="token string">"alita1.mp4"</span> <span class="token operator">-</span>TextPrompt <span class="token string">"the flying chains and its lips"</span>
+</code></pre><h3 id="32-demo-2-custom-resolution-and-fps">3.2 Demo 2: Custom Resolution and FPS </h3>
+<ul>
+<li>max resolution (default 1080)</li>
+<li>fps (default 30)</li>
+</ul>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span>\video_inpaint_demo<span class="token punctuation">.</span>ps1 `
+    <span class="token operator">-</span>VideoPath <span class="token string">"batman1.mp4"</span> `
+    <span class="token operator">-</span>TextPrompt <span class="token string">"the person walking on the left"</span> `
+    <span class="token operator">-</span>MaxResolution 1080 ` 
+    <span class="token operator">-</span>FrameExtractionFps 30
+</code></pre><h3 id="33-demo-3-fast-mode-cpu-mode-skip-enhancements-">3.3 Demo 3: Fast Mode (CPU mode, Skip enhancements ❎) </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span>\video_inpaint_demo<span class="token punctuation">.</span>ps1 `
+    <span class="token operator">-</span>VideoPath <span class="token string">"test.mp4"</span> `
+    <span class="token operator">-</span>TextPrompt <span class="token string">"the watermark"</span> `
+    <span class="token operator">-</span>SkipEnhance `
+    <span class="token operator">-</span>ForceCPU
+</code></pre><h3 id="34-demo-4-high-quality-mode-slower-gpu-mode-all-pipeline-">3.4 Demo 4: High Quality Mode (Slower GPU mode, All pipeline ✅) </h3>
+<ul>
+<li>maximum settings with All Settings Pipeline</li>
+</ul>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span>\video_inpaint_demo<span class="token punctuation">.</span>ps1 `
+    <span class="token operator">-</span>VideoPath <span class="token string">"video.mp4"</span> `
+    <span class="token operator">-</span>TextPrompt <span class="token string">"the logo"</span> `
+    <span class="token operator">-</span>NeighborStride 2 `
+    <span class="token operator">-</span>MaxLoadFrames 12 `
+    <span class="token operator">-</span>DenoiseStrength 7
+</code></pre><h2 id="️-4-parameter-description">⚙️ 4. Parameter Description </h2>
+<h3 id="41-demo-script-video_inpaint_demo_enps1">4.1 Demo Script (video_inpaint_demo_en.ps1) </h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameters</th>
+<th style="text-align:center">Necessity</th>
+<th style="text-align:center">Default</th>
+<th style="text-align:left">Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-VideoPath</code></td>
+<td style="text-align:center"><span style="color: green; font-weight: bold;">✓</span></td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">demo_video the path od video</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-TextPrompt</code></td>
+<td style="text-align:center"><span style="color: green; font-weight: bold;">✓</span></td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">the removed object in natural language</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-MaxResolution</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">720</td>
+<td style="text-align:left">max resolution，limit frames' height /width</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-FrameExtractionFps</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">30</td>
+<td style="text-align:left">Frame Extractions FPS</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-NeighborStride</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">3</td>
+<td style="text-align:left">Neighborhood step size (1-10, smaller values ​​result in better quality but slower speed)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-MaxLoadFrames</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">8</td>
+<td style="text-align:left">Maximum number of frames loaded (affects memory usage and quality)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-DenoiseStrength</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">5</td>
+<td style="text-align:left">Noise reduction intensity (1-10)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-SkipMask</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:left">Skip P-MASk Processing</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-SkipInpaint</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:left">Skip NOF-Eraser Video Inpainting</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-SkipEnhance</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:left">Skip UR-Net Video Enhancement</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-SkipDenoise</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:left">Skip Denoise</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-ForceCPU</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:left">Force CPU（BasicVSR++）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-batch-processing-video_inpaint_pipeline_enps1">4.2 Batch Processing (video_inpaint_pipeline_en.ps1) </h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameters</th>
+<th style="text-align:center">Necessity</th>
+<th style="text-align:center">Default</th>
+<th style="text-align:left">Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-VideoPath</code></td>
+<td style="text-align:center"><span style="color: green; font-weight: bold;">✓</span></td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">Video file path (supports relative and absolute paths)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-TextPrompt</code></td>
+<td style="text-align:center"><span style="color: green; font-weight: bold;">✓</span></td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">Description of the object to be removed (English)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-OutputDir</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">"results"</td>
+<td style="text-align:left">Output directory (relative or absolute path)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-NeighborStride</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">3</td>
+<td style="text-align:left">Neighbor stride</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-MaxLoadFrames</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">8</td>
+<td style="text-align:left">Maximum number of frames to load</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-OtherParams</code></td>
+<td style="text-align:center"><span style="color: red; font-weight: bold;">✗</span></td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">Similar to the demonstration script</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-5-peanut-video-processing-architecture">🚀 5. PEANUT Video Processing Architecture </h2>
+<div style="
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #ffffff; /* 纯白背景 */
+    padding: 30px 15px; 
+    border-radius: 15px; /* 更圆润的边角 */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); /* 更深的阴影，突出主体 */
+    margin: 20px 0;
+">
+<h4 style="color: #00796b; margin-bottom: 8px; border-bottom: 2px solid #00796b; padding-bottom: 3px;">📥 INPUT DATA / CONFIGS</h4>
+<div style="
+    display: flex; 
+    flex-direction: column; /* 关键修改：将元素垂直堆叠 */
+    align-items: center;    /* 关键修改：将元素沿交叉轴（水平方向）居中 */
+    gap: 15px;              /* 调整元素间的垂直间距 */
+    width: 100%;
+    margin: 10px 0;
+">
+    <div style="background-color: #e0f7fa; padding: 10px 25px; border-radius: 8px; font-weight: bold; border: 2px solid #00bcd4; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        `Input Video` (`demo_video/` or `raw_video/`)
+    </div>
+    <div style="background-color: #fffde7; padding: 10px 25px; border-radius: 8px; font-weight: bold; border: 2px solid #ff9800; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        `Prompt Configs` (`raw_prompt/prompt_list`)
+    </div>
+</div>
+<div style="width: 4px; height: 35px; background-color: #b3e5fc; margin: 15px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 20px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #e8eaf6; border-left: 6px solid #5c6bc0; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #5c6bc0;">1️⃣ 🎞️ STEP 1: Frame Extraction (FPS &amp; Resolution)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Extract video frames using OpenCV</li>
+        <li>➡️ Output: `frames_package/` <span style="font-size: 0.9em; color: #b80f0fff; font-weight: bold;">(PNG Format Frames)</span></li>
+    </ul>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #e3f4fd; border-left: 6px solid #29b6f6; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #29b6f6;">2️⃣ ✂️ STEP 2: Mask Generation (P-MASk Module)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Generate object masks based on text prompt</li>
+        <li>➡️ Output: `mask_package/` <span style="font-size: 0.9em; color: #281cd5ff; font-weight: bold;">(Binary-Value Masks)</span></li>
+    </ul>
+</div>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 P-MASk Module Pipeline Processing
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/P_MASk_CMT_HSA.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #fbe9e7; border-left: 6px solid #ff7043; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #ff7043;">3️⃣ ⚡ STEP 3: Resizing (Frame &amp; Mask Speedup 💫)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Adjust to specified resolution</li>
+        <li>➡️ Output: `*_resized` folder</li>
+    </ul>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 20px; background: #e0f2f1; border: 4px solid #009688; border-radius: 12px; box-shadow: 0 8px 15px rgba(0, 150, 136, 0.3);">
+    <h4 style="margin: 0 0 5px 0; color: #009688;">4️⃣ 🪄 STEP 4: Video Inpainting (NOF-Eraser CORE)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 1em; font-weight: 500; line-height: 1.6;">
+        <li>Method: Remove masked objects (E2FGVI-based)</li>
+        <li>➡️ Output: `inpaint_package/` <span style="font-size: 0.9em; color: #12d12cff; font-weight: bold;">(Inpainted Frames)</span></li>
+    </ul>
+</div>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 NOF-Eraser Module Pipeline Processing
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/NOF_FULL.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #f3e5f5; border-left: 6px solid #ab47bc; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #ab47bc;">5️⃣ 🌟 STEP 5: Quality Enhancement (UR-Net with BasicVSR++ Algorithm)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Improve video quality and clarity</li>
+        <li>➡️ Output: `restore_package/` <span style="font-size: 0.9em; color: #c61b79ff; font-weight: bold;">(Enhanced Frames)</span></li>
+    </ul>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #e0f7fa; border-left: 6px solid #039be5; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #039be5;">6️⃣ 🧼 STEP 6: Denoising Module (NLM Denoise)</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Apply NLM/Bilateral/Gaussian denoising</li>
+        <li>➡️ Output: `denoise_package/` <span style="font-size: 0.9em; color: #5846a5ff; font-weight: bold;">(Denoised Frames)</span></li>
+    </ul>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #3f51b5; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; padding: 15px; background: #e6f0e6; border-left: 6px solid #66bb6a; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h4 style="margin: 0 0 5px 0; color: #66bb6a;">7️⃣ 🎥 STEP 7: Video Generation</h4>
+    <ul style="list-style: none; padding-left: 15px; margin: 0; font-size: 0.9em; line-height: 1.5;">
+        <li>Method: Create final video from frame sequence</li>
+    </ul>
+</div>
+<div style="width: 4px; height: 25px; background-color: #b3e5fc; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+<div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #4caf50; margin: 0 auto 15px auto;"></div>
+<div style="width: 95%; max-width: 550px; margin-top: 15px; padding: 20px; border-radius: 12px; background-color: #e8f5e9; border: 3px solid #4caf50; box-shadow: 0 6px 12px rgba(76, 175, 80, 0.3);">
+    <h4 style="margin: 0; color: #4caf50;">✅ **FINAL OUTPUT**</h4>
+    <span style="font-weight: bold; font-size: 1.2em;">`demo_output/` or `results/`</span>
+</div>
+</div>
+<h2 id="-6-performance-recommendations">💡 6. Performance Recommendations </h2>
+<h3 id="61-quick-mode-low-quality--fast️️">6.1 Quick Mode (Low Quality &amp; Fast🏃‍♂️‍➡️) </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token operator">-</span>NeighborStride 5 <span class="token operator">-</span>MaxLoadFrames 4 <span class="token operator">-</span>DenoiseStrength 3
+</code></pre><h3 id="62-balanced-mode-recommended">6.2 Balanced Mode (Recommended🥳) </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token operator">-</span>NeighborStride 3 <span class="token operator">-</span>MaxLoadFrames 8 <span class="token operator">-</span>DenoiseStrength 5
+</code></pre><h3 id="63-quality-mode-high-quality--slow-speed️">6.3 Quality Mode (High Quality &amp; Slow Speed🙇‍♀️) </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token operator">-</span>NeighborStride 2 <span class="token operator">-</span>MaxLoadFrames 12 <span class="token operator">-</span>DenoiseStrength 7
+</code></pre><h2 id="️-7-important-operating-notes">⚠️ 7. Important Operating Notes </h2>
+<blockquote>
+<p>Please follow these guidelines before running the processing script to ensure optimal performance and results.</p>
+</blockquote>
+<div style="margin-top: 15px;">
+<ul style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #007bff; background-color: #f7f9fc; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        👉 1. Video Path Restriction
+        <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
+            You only need to provide the filename (e.g., `alita1.mp4`). The video file must be placed inside the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">raw_video/</code> folder.
+        </p>
+    </li>
+    <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #28a745; background-color: #f7fcf7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        🗣️ 2. Text Prompt Language
+        <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
+            The object to be removed must be described using English text prompts (e.g., "the person", "the car", "the traffic sign").
+        </p>
+    </li>
+    <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #ffc107; background-color: #fffdf7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        💾 3. Memory Usage (VRAM)
+        <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
+            If you encounter Out-of-Memory (OOM) errors, please try reducing the value of the <code style="background-color: #ffe0b2; padding: 2px 4px; border-radius: 3px;">MaxLoadFrames</code> parameter.
+        </p>
+    </li>
+    <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #dc3545; background-color: #fcf7f7; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        ⏱️ 4. Processing Time Estimate
+        <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
+            Processing time depends on video length and parameter settings. A 10-second video typically requires 5 to 20 minutes for full pipeline execution.
+        </p>
+    </li>
+    <li style="margin-bottom: 12px; padding: 10px; border-left: 4px solid #6c757d; background-color: #fcfcfc; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        🧹 5. Clean Run Policy
+        <p style="margin: 5px 0 0 15px; font-size: 0.95em;">
+            Each new script run will clear all previous intermediate results (e.g., frames, masks) to maintain a clean directory structure.
+        </p>
+    </li>
+</ul>
+</div>
+<hr>
+<h2 id="️-8-environment-requirements">🛠️ 8. Environment Requirements </h2>
+<div style="
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #f8f8f8; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+">
+<h3 id="️-81-operating-system">🖥️ 8.1 <strong>Operating System</strong> </h3>
+<div style="
+    background-color: #e6f7ff; 
+    padding: 8px 15px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    border-left: 5px solid #1890ff;
+    margin-top: 10px;
+">
+    Windows | CUDA: 12.7 | PyTorch Version: 2.6.0+cu124
+CUDA Available: True
+CUDA Version: 12.4 
+</div>
+<h3 id="-82-conda-environments-dependencies">🧪 8.2 <strong>Conda Environments (Dependencies)</strong> </h3>
+<p style="font-size: 0.9em; color: #555;">
+    The processing pipeline requires three dedicated Conda environments for different components:
+</p>
+<ul style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 10px; padding: 10px; border: 1px solid #bae0ff; background-color: #e6f7ff; border-radius: 6px;">
+        <span style="font-weight: bold; color: #1890ff;">Conda Environment:</span> <code>samwise</code>
+        <p style="margin: 5px 0 0 15px; font-size: 0.9em; color: #333;">
+            <span style="font-weight: bold; color: #52c41a;">→ Function:</span> Mask Generation (SAMWISE Project)
+        </p>
+    </li>
+    <li style="margin-bottom: 10px; padding: 10px; border: 1px solid #fff1b8; background-color: #fffbe6; border-radius: 6px;">
+        <span style="font-weight: bold; color: #faad14;">Conda Environment:</span> <code>e2fgvi-project</code>
+        <p style="margin: 5px 0 0 15px; font-size: 0.9em; color: #333;">
+            <span style="font-weight: bold; color: #52c41a;">→ Function:</span> Video Inpainting (E2FGVI Project)
+        </p>
+    </li>
+    <li style="margin-bottom: 10px; padding: 10px; border: 1px solid #ffccc7; background-color: #fff1f0; border-radius: 6px;">
+        <span style="font-weight: bold; color: #f5222d;">Conda Environment:</span> <code>basicvsrpp-demo</code>
+        <p style="margin: 5px 0 0 15px; font-size: 0.9em; color: #333;">
+            <span style="font-weight: bold; color: #52c41a;">→ Function:</span> Quality Enhancement (BasicVSR++ Project)
+        </p>
+    </li>
+</ul>
+</div>
+<h2 id="-9-video-content-inpainting-workflow-examples">🎬 9. Video Content Inpainting Workflow Examples </h2>
+<p>The following provides two structured workflows using PowerShell for a hypothetical video inpainting project (assumed to be <code>SuperVideo-inpaint</code>).</p>
+<h3 id="i-demonstration-script-workflow-rapid-single-video-testing">I. Demonstration Script Workflow: Rapid Single-Video Testing✨ </h3>
+<p>This workflow is optimized for quickly verifying the project setup, the performance of the <strong>segmentation model</strong> (Mask Generation), and the final <strong>inpainting quality</strong> on a single test video.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Step</th>
+<th style="text-align:left">Command (PowerShell)</th>
+<th style="text-align:left">Purpose &amp; Technical Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. Navigate to Project Root Path</strong></td>
+<td style="text-align:left"><code>cd C:\Users\Aiur\SuperVideo-inpaint</code></td>
+<td style="text-align:left">Change directory to the repository's root, ensuring correct path resolution for all dependencies and scripts.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. Data Ingestion</strong></td>
+<td style="text-align:left"><code>Copy-Item "D:\alita1.mp4" -Destination "demo_video\"</code></td>
+<td style="text-align:left">Ingest the source video into the designated input folder (<code>demo_video/</code>) for the demonstration environment.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Core Execution</strong></td>
+<td style="text-align:left"><code>.\video_inpaint_demo.ps1 -VideoPath "alita1.mp4" -TextPrompt "the flying chains and its lips"</code></td>
+<td style="text-align:left">Executes the primary pipeline: 1. <strong>Frame Extraction</strong>. 2. <strong>Prompt-based Segmentation/Mask Generation</strong> (e.g., using SAM or RITM). 3. <strong>Video Inpainting</strong> (e.g., using a Flow-based or RNN model).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Final Output Review</strong></td>
+<td style="text-align:left"><code>explorer demo_output\alita1_result</code></td>
+<td style="text-align:left">Quickly opens the directory containing the processed, high-quality output video (<code>alita1_result.mp4</code>).</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3 id="-intermediate-results-analysis-debugging-phase">🔬 Intermediate Results Analysis (Debugging Phase) </h3>
+<p>For professional debugging and <strong>Quantitative Evaluation</strong> of the model's performance (e.g., checking Mask IoU or Inpainting Consistency), these folders are crucial:</p>
+<ul>
+<li><code>explorer frames_package\alita1</code>: Review the original <strong>frame sequence</strong>.</li>
+<li><code>explorer mask_package\alita1_mask</code>: Examine the generated <strong>temporal mask sequence</strong>, which defines the target region for removal.</li>
+<li><code>explorer inpaint_package\alita1</code>: Analyze the per-frame <strong>inpainting results</strong> before final video composition/post-processing.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="ii-batch-pipeline-workflow-large-scale-processing-and-data-engineering">II. Batch Pipeline Workflow: Large-Scale Processing and Data Engineering✨ </h3>
+<p>This workflow is designed for running multiple jobs, facilitating large-scale <strong>data science experiments</strong> and providing control over output organization.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Step</th>
+<th style="text-align:left">Command (PowerShell)</th>
+<th style="text-align:left">Purpose &amp; Technical Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. Bulk Data Preparation</strong></td>
+<td style="text-align:left"><code>Copy-Item "D:\videos\*.mp4" -Destination "raw_video\"</code></td>
+<td style="text-align:left">Standardizes input by copying a batch of raw videos into the designated processing queue folder (<code>raw_video/</code>).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. Sequential Processing (Job 1)</strong></td>
+<td style="text-align:left"><code>.\video_inpaint_pipeline_en.ps1 -VideoPath "raw_video\video1.mp4" -TextPrompt "the person"</code></td>
+<td style="text-align:left">Initiates the pipeline to remove the target object ("the person") from <code>video1.mp4</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Sequential Processing (Job 2)</strong></td>
+<td style="text-align:left"><code>.\video_inpaint_pipeline_en.ps1 -VideoPath "raw_video\video2.mp4" -TextPrompt "the car"</code></td>
+<td style="text-align:left">Initiates the pipeline to remove the target object ("the car") from <code>video2.mp4</code>.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3 id="️-custom-output-directory-for-experiment-tracking">⚙️ Custom Output Directory for Experiment Tracking </h3>
+<p>The <code>-OutputDir</code> parameter is vital for <strong>Mathematical Modeling/Experimentation</strong>, allowing results from different models or parameter configurations to be isolated for comparison and analysis.</p>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span>\video_inpaint_pipeline_en<span class="token punctuation">.</span>ps1 `
+    <span class="token operator">-</span>VideoPath <span class="token string">"raw_video\video3.mp4"</span> `
+    <span class="token operator">-</span>TextPrompt <span class="token string">"the logo"</span> `
+    <span class="token operator">-</span>OutputDir <span class="token string">"custom_output\LogoRemoval_ExperimentA"</span>
+</code></pre></blockquote>
+<h2 id="-10-quality-assessment--metric-evaluation-workflow">📊 10. Quality Assessment &amp; Metric Evaluation Workflow </h2>
+<p>This section outlines the workflow for running <strong>EXP0</strong>, a controlled experiment designed to rigorously evaluate the inpainting quality of the <strong>LAMA4Video</strong> model against established metrics.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Step</th>
+<th style="text-align:left">Command (PowerShell)</th>
+<th style="text-align:left">Purpose &amp; Technical Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. Change Directory</strong></td>
+<td style="text-align:left"><code>cd experiment\exp0</code></td>
+<td style="text-align:left">Navigate to the specific experiment directory to ensure the evaluation scripts can locate the necessary ground truth data and model outputs.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. Environment Activation</strong></td>
+<td style="text-align:left"><code>conda activate e2fgvi-project</code></td>
+<td style="text-align:left"><strong>Crucial Step:</strong> Activate the designated Anaconda/Conda environment. This environment must contain all dependencies (e.g., PyTorch, NumPy, scikit-image) required by the <code>e2fgvi-project</code> for complex metric calculations.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Execute Evaluation</strong></td>
+<td style="text-align:left"><code>python evaluate_exp0_quality.py</code></td>
+<td style="text-align:left">Run the script to compute raw quantitative metrics by comparing the LAMA4Video output with the ground truth (GT) frames. This generates the primary data for analysis.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Generate Visual Reports</strong></td>
+<td style="text-align:left"><code>python visualize_exp0_quality.py</code></td>
+<td style="text-align:left">Creates detailed, per-video visualizations (e.g., charts, plots) for metric trends over time or frame sequence.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>5. Generate Overall Summary</strong></td>
+<td style="text-align:left"><code>python visualize_overall_exp0_metrics.py</code></td>
+<td style="text-align:left">Generates aggregated reports (e.g., bar charts, box plots) summarizing the <strong>mean</strong> and <strong>variance</strong> of metrics across the entire dataset.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>6. Review Results</strong></td>
+<td style="text-align:left"><code>explorer results\metrics</code></td>
+<td style="text-align:left">Opens the output directory containing the generated CSV/JSON metric files and the final visualization plots (e.g., PNG, SVG).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-core-evaluation-metrics">📈 Core Evaluation Metrics </h3>
+<p>The experiment focuses on both traditional signal processing metrics and specialized metrics for video consistency:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Metric Name (Full)</th>
+<th style="text-align:left">Acronym</th>
+<th style="text-align:left">Domain &amp; Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Peak Signal-to-Noise Ratio</strong></td>
+<td style="text-align:left">PSNR</td>
+<td style="text-align:left">Measures absolute reconstruction fidelity based on Mean Squared Error (MSE). Higher is better.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Structural Similarity Index Measure</strong></td>
+<td style="text-align:left">SSIM</td>
+<td style="text-align:left">Assesses perceptual similarity based on luminance, contrast, and structure, aligning more closely with human vision.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Sharpness Score</strong></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Measures the clarity of edges and fine details in the output frames (e.g., using Laplace filter variance).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Blur Score</strong></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Quantifies the inverse of sharpness, indicating lack of detail and over-smoothing. Lower is better.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Artifact Score</strong></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Specialized metric to detect common inpainting defects like checkerboard patterns or color bleeding. Lower is better.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Temporal Consistency</strong></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><strong>Critical for Video Inpainting.</strong> Evaluates frame-to-frame smoothness and stability of the repaired region, often via optical flow or difference mapping.</td>
+</tr>
+</tbody>
+</table>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 60px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment0: The Fail of Big-LaMa Applied in Vipaint
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/compare.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment2: P-MASk Hyperparameters Comparision
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/total_summary.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<div style="
+    text-align: center; /* 居中整个区块的内容 */
+    margin: 30px auto; 
+    max-width: 2000px; /* 控制最大宽度 */
+    padding: 10px 0;
+">
+    <h3 style="
+        color: #1b5e20; /* 匹配流程条的深绿色主题 */
+        margin-bottom: 5px; /* 减少标题和下面的元素之间的间距 */
+        font-size: 1.4em;
+        font-weight: 800; /* 极致加粗 */
+        display: block; /* 确保标题占据完整宽度 */
+        padding: 5px 15px 5px 15px;
+        letter-spacing: 0.5px; 
+        text-transform: uppercase;
+    ">
+        🎬 Experiment2: NOF-Eraser Hyperparameters Comparision
+    </h3>
+    <div style="display: inline-block; max-width: 100%; margin-top: 10px;">
+        <div style="
+            border-bottom: 3px solid #4caf50; 
+            margin-bottom: 10px; /* 增加线和图片之间的间距 */
+            margin-top: 5px; /* 增加标题和线之间的间距 */
+        "></div>
+        <img src="./assets/readme/timecost.png" alt="P-MASk Prompt Guided Mask Generation" style="
+            display: block; /* 确保图片独占一行 */
+            margin: 0 auto; /* 确保图片在其父容器中居中 */
+            max-width: 100%; /* 确保图片不超过容器宽度 */
+            height: auto;
+            border: 1px solid #ddd; /* 轻微边框 */
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 提升视觉效果 */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        " title="P-MASk Prompt Guided Mask Generation">
+    </div>
+</div>
+<h2 id="-11-troubleshooting-guide">📞 11. Troubleshooting Guide </h2>
+<div style="
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    background-color: #f7f7f7; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+">
+<div style="padding: 15px; border-left: 5px solid #ff4d4f; background-color: #fff1f0; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #ff4d4f;">❌ Issue 1: Video File Not Found</h4>
+    <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution:</p>
+    <ul style="margin: 0; padding-left: 20px; font-size: 0.95em;">
+        <li>Demo Script: Ensure the video is placed in the <code>demo_video/</code> folder.</li>
+        <li>Batch Script: Use the full path or correct relative path (e.g., <code>raw_video\video.mp4</code>).</li>
+    </ul>
+</div>
+<div style="padding: 15px; border-left: 5px solid #1890ff; background-color: #e6f7ff; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #1890ff;">🐍 Issue 2: ModuleNotFoundError (cv2, PIL, etc.)</h4>
+    <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution:</p>
+    <p style="margin: 0; font-size: 0.95em;">The script is designed to automatically activate the correct Conda environment. Ensure all three required environments are properly installed:</p>
+    <pre style="background-color: #262626; color: #f0f0f0; padding: 8px; border-radius: 4px; margin-top: 8px; font-size: 0.9em;">conda env list  # Check your environments</pre>
+</div>
+<div style="padding: 15px; border-left: 5px solid #faad14; background-color: #fffbe6; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #faad14;">💾 Issue 3: CUDA Out of Memory (OOM)</h4>
+    <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution:</p>
+    <p style="margin: 0; font-size: 0.95em;">Reduce VRAM consumption by decreasing these parameters:</p>
+    <pre style="background-color: #262626; color: #f0f0f0; padding: 8px; border-radius: 4px; margin-top: 8px; font-size: 0.9em;">-NeighborStride 5 -MaxLoadFrames 4</pre>
+</div>
+<div style="padding: 15px; border-left: 5px solid #eb2f96; background-color: #fff0f6; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #eb2f96;">🚫 Issue 4: Mask Count Mismatch (IndexError)</h4>
+    <p style="margin-bottom: 5px; font-weight: bold;">Symptom:</p>
+    <pre style="background-color: #f7f7f7; color: #eb2f96; padding: 5px; border-radius: 3px; font-size: 0.9em;">IndexError: index X is out of bounds</pre>
+    <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution: Re-generate Masks</p>
+    <p style="margin: 0; font-size: 0.95em;">Clear old intermediate data before re-running:</p>
+    <pre style="background-color: #262626; color: #f0f0f0; padding: 8px; border-radius: 4px; margin-top: 8px; font-size: 0.9em;"># Clear old data
+Remove-Item "frames_package\video*" -Recurse -Force
+Remove-Item "mask_package\video*" -Recurse -Force
+.\video_inpaint_demo.ps1 -VideoPath "video.mp4" -TextPrompt "object"</pre>
+</div>
+<div style="padding: 15px; border-left: 5px solid #52c41a; background-color: #f6ffed; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #52c41a;">✅ Issue 5: SAMWISE Output Path Error</h4>
+    <p style="margin-bottom: 5px; font-weight: bold;">Symptom:</p>
+    <pre style="background-color: #f7f7f7; color: #52c41a; padding: 5px; border-radius: 3px; font-size: 0.9em;">Binary masks not found</pre>
+    <p style="margin-bottom: 5px; font-weight: bold;">💡 Solution:</p>
+    <p style="margin: 0; font-size: 0.95em;">This issue includes an automatic fix in the script. Ensure you are using the latest version of <code>video_inpaint_demo.ps1</code>.</p>
+</div>
+</div>
+<h2 id="-12-version-history">🔄 12. Version History </h2>
+<div style="
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: #f0f8ff; /* Light blue background for history */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+">
+<h3 id="-v30-2025-12-5">🟢 v3.0 (2025-12-5) </h3>
+<ul style="list-style: none; padding-left: 15px; margin: 0;">
+    <li style="margin-bottom: 5px;">✨ Feature: Added the <code>video_inpaint_demo.ps1</code> demonstration script.</li>
+    <li style="margin-bottom: 5px;">✨ Feature: Introduced the EXP0 Quality Assessment System.</li>
+    <li style="margin-bottom: 5px;">🐛 Fix: Resolved automatic Conda environment activation issues.</li>
+    <li style="margin-bottom: 5px;">🐛 Fix: Fixed SAMWISE path detection problems.</li>
+    <li style="margin-bottom: 5px;">🐛 Fix: Fixed frame/mask count validation logic.</li>
+    <li style="margin-bottom: 5px;">⚙️ Update: <code>video_inpaint_pipeline_en.ps1</code> now includes the <code>-OutputDir</code> parameter.</li>
+</ul>
+<h3 id="-v20-2025-11-14">🟡 v2.0 (2025-11-14) </h3>
+<ul style="list-style: none; padding-left: 15px; margin: 0;">
+    <li style="margin-bottom: 5px;">Initial Release.</li>
+</ul>
+<hr style="border-top: 1px dashed #ccc;">
+<p style="font-weight: bold; font-size: 1.1em; color: #007bff;">
+    Current Version: 3.0
+</p>
+</div>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

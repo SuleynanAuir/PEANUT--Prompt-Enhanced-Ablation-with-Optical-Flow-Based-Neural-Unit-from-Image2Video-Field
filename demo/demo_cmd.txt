@@ -1,0 +1,3 @@
+.\video_inpaint_demo_en.ps1 -VideoPath "demo\demo_video\batman1.mp4" -TextPrompt "the person walks on the left"
+
+.\video_inpaint_demo_en.ps1 -VideoPath "demo\demo_video\batman6.mp4" -TextPrompt "the person runs with yellow clothes"

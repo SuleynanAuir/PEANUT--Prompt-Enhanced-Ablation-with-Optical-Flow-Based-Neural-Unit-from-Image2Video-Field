@@ -89,36 +89,41 @@ param(
 # ============================================
 $ProjectRoot = "C:\Users\Aiur\SuperVideo-inpaint"
 
+
+# ===============================
+# 修改输出目录为PEANUT主目录下的demo\demo_output
+# ===============================
+$PeanutRoot = "C:\Users\Aiur\PEANUT\PEANUT--Prompt-Enhanced-Ablation-with-Optical-Flow-Based-Neural-Unit"
 $Config = @{
     # Conda configuration
     CondaPath = "C:\Users\Aiur\miniconda3\Scripts\conda.exe"
-    
+
     # Project paths
     ProjectRoot = $ProjectRoot
     SamwisePath = Join-Path $ProjectRoot "SAMWISE"
     E2FGVIPath = Join-Path $ProjectRoot "E2FGVI_Project\E2FGVI"
     BasicVSRPath = Join-Path $ProjectRoot "BasicVSR_PlusPlus"
-    
+
     # Demo-specific folders
     DemoVideoDir = Join-Path $ProjectRoot "demo_video"
-    DemoOutputDir = Join-Path $ProjectRoot "demo_output"
-    
+    DemoOutputDir = Join-Path $PeanutRoot "demo\demo_output"
+
     # Working directories (temporary processing)
     FramesPackageDir = Join-Path $ProjectRoot "frames_package"
     MaskPackageDir = Join-Path $ProjectRoot "mask_package"
     InpaintPackageDir = Join-Path $ProjectRoot "inpaint_package"
     RestorePackageDir = Join-Path $ProjectRoot "restore_package"
     DenoisePackageDir = Join-Path $ProjectRoot "denoise_package"
-    
+
     # Conda environment names
     SamwiseEnv = "samwise"
     E2FGVIEnv = "e2fgvi-project"
     BasicVSREnv = "basicvsrpp-demo"
-    
+
     # E2FGVI model configuration
     E2FGVIModel = "e2fgvi_hq"
     E2FGVICheckpoint = Join-Path $ProjectRoot "E2FGVI_Project\E2FGVI\release_model\E2FGVI-HQ-CVPR22.pth"
-    
+
     # BasicVSR++ model configuration
     BasicVSRConfig = Join-Path $ProjectRoot "BasicVSR_PlusPlus\configs\basicvsr_plusplus_reds4.py"
     BasicVSRCheckpoint = Join-Path $ProjectRoot "BasicVSR_PlusPlus\checkpoints\basicvsr_plusplus_reds4.pth"
@@ -255,8 +260,8 @@ Write-Info "Output Directory: $($Config.DemoOutputDir)"
 
 # Create output directory
 $ResultsDir = Join-Path $Config.DemoOutputDir "${VideoBaseName}_result"
-if (-not (Test-Path $ResultsDir)) { 
-    New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null 
+if (-not (Test-Path $ResultsDir)) {
+    New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 }
 
 # ============================================
